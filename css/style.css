@@ -20,9 +20,11 @@ a{
 }
 
 body{
-	background-image: url(../images/background.jpg); 						    background-repeat: no-repeat;
+	background-image: url(../images/background.jpg); 						   
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background position:center;
+	background-color:#000000;
 	min-width:1280px;
 }
 
