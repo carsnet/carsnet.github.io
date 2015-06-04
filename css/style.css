@@ -1,6 +1,7 @@
 @charset "utf-8";
 a{
 	text-decoration:none;
+	color:#EC0003;
 }
 ::selection{
 	background-color:#FF0004;
@@ -20,12 +21,15 @@ a{
 }
 
 body{
-	background-image: url(../images/background.jpg); 						   
-	background-repeat: no-repeat;
-	background-attachment:fixed;
+	background-image: url(../images/background.jpg);
+	background-attachment: fixed;
+
+
+
+
+
 	background position:center;
-	background-color: #000000;
-	min-width:1280px;
+	min-width: 1280px;
 }
 
 .header {
@@ -83,12 +87,13 @@ body{
 	padding-bottom: 20px;
 	padding-left: 20px;
 }
-h1,h2
+h1,h2,h3,h4
 {
-	color: #D1D1D1;
+	color: #ffffff;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0px;
 }
-h1 span
+h1 span, h4 span
 {
 	color: #FF0004;
 }
@@ -98,7 +103,12 @@ h1 span
 	margin-left: 61px;
 	position: relative;
 	padding-bottom: 24px;
-	margin-top: -25px;
+}
+.pghd /*page heading in body*/
+{
+	padding-top: 15px;
+	padding-left: 22px;
+
 }
 #logo
 {
@@ -112,6 +122,10 @@ h1 span
 p
 {
 	color: #EFEFEF;
+}
+p b
+{
+	color:#ff0000;
 }
 .manu
 {
@@ -128,7 +142,8 @@ p
 .manu a:hover img{
 	background-color:rgba(255,0,4,0.7);
 }
-.pop{
+.pop     /*pop up car selector in gallery*/
+{
 	display: none;
 	position: absolute;
 	top: 50%;
@@ -139,24 +154,33 @@ p
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 525px;
-	height: 350px;
+	height: 427px;
 	background-color: rgba(250,250,250,0.9);
-	border-radius: 10px;
 	-webkit-box-shadow: 0px 0px 40px #ff0000;
 	-moz-box-shadow: 0px 0px 40px #ff0000;
 	-o-box-shadow: 0px 0px 40px #ff0000;
 	box-shadow: 0px 0px 40px #ff0000;
 	z-index: 1002;
 	overflow: auto;
+	padding-bottom: 25px;
+	margin-bottom: 100px;
 }
 .pop>a
 {
-	float:right;
-	font-weight:bold;
-	color:#000000;
+	float: right;
+	font-weight: bold;
+	color: #000000;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-left: 0px;
+	border: 1px  solid rgba(0,0,0,1.00);
+	border-radius: 30px;
+	padding-right: 7px;
+	padding-left: 7px;
 }
-.pop a:hover{
+.pop>a:hover{
 	color:#E90003;
+	border: 1px  solid #E90003;
 }
 
 .pop div
@@ -172,7 +196,34 @@ p
 {
 	color:rgba(158,0,2,1.00);
 }
+.pop a img
+{
+	border:1px solid rgba(250,250,250,0);
+}
+.pop a:hover img
+{
+	border: 1px solid #FF0004;
+}
 .pop>a+div
 {
 	clear:both;
+}
+.left
+{
+	float: left;
+	width: 248px;
+	margin-top: 15px;
+	display: inline-block;
+}
+.left a:hover
+{
+	color:#FF0000;
+	font-weight:bold;
+}
+.desc
+{
+	float: none;
+	width: 725px;
+	margin-left: 11px;
+	display: inline-block;
 }
