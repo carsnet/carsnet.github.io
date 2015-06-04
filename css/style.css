@@ -3,6 +3,10 @@ a{
 	text-decoration:none;
 	color:#EC0003;
 }
+a:hover
+{
+	color:#FF0000;
+}
 ::selection{
 	background-color:#FF0004;
 }
@@ -217,7 +221,6 @@ p b
 }
 .left a:hover
 {
-	color:#FF0000;
 	font-weight:bold;
 }
 .desc
