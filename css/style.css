@@ -143,12 +143,16 @@ p b
 	margin-left: 18px;
 	position:relative;
 }
+.manu a:hover
+{
+	cursor:pointer;
+}
 .manu a:hover img{
 	background-color:rgba(255,0,4,0.7);
 }
 .pop     /*pop up car selector in gallery*/
 {
-	display: none;
+	display:none;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -158,7 +162,7 @@ p b
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 525px;
-	height: 427px;
+	height: 442px;
 	background-color: rgba(250,250,250,0.9);
 	-webkit-box-shadow: 0px 0px 40px #ff0000;
 	-moz-box-shadow: 0px 0px 40px #ff0000;
@@ -166,7 +170,7 @@ p b
 	box-shadow: 0px 0px 40px #ff0000;
 	z-index: 1002;
 	overflow: auto;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	margin-bottom: 100px;
 }
 .pop>a

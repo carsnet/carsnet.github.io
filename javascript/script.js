@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	$(".manu").children("a").click(function(){
+		$(".pop").hide();
+		$(".pop").css("width","10px");
+		$(".pop").find("*").css("opacity","0.2");
+		$(this).next().animate({height:"show"},"fast");
+		$(this).next().animate({width:"525px"},"fast",function(){$(".pop").find("*").animate({opacity:"1"});});
+	});
+	$(".pop").children("a").click(function(event){
+		event.stopPropagation();
+		$(this).parent().hide('slow');
+	});
+});
