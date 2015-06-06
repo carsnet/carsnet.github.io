@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".manu").children("a").click(function(){
+	$(".manu>a").click(function(){
 		$(".pop").hide();
 		$(".pop").css("width","10px");
 		$(".pop").find("*").css("opacity","0.2");
