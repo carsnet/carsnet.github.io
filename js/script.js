@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$(this).next().animate({height:"show"},"fast");
 		$(this).next().animate({width:"525px"},"fast",function(){$(".pop").find("*").animate({opacity:"1"});});
 	});
-	$(".pop").children("a").click(function(event){
+	$(".pop>a").click(function(event){
 		event.stopPropagation();
 		$(this).parent().hide('slow');
 	});
