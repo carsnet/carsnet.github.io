@@ -4,3 +4,6 @@
 3 is one 77 small
 4 is vulcan small
 5 is r8old small
+6 is agerar small
+7 is aventador
+8 is huracan

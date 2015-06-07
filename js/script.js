@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$(".manu>a").click(function(){
 		$(".pop").hide();
 		$(".pop").css("width","10px");
-		$(".pop").find("*").css("opacity","0.2");
+		$(".pop").find("*").css("opacity","0");
 		$(this).next().animate({height:"show"},"fast");
 		$(this).next().animate({width:"525px"},"fast",function(){$(".pop").find("*").animate({opacity:"1"});});
 	});
