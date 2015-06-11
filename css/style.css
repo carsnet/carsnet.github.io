@@ -91,13 +91,17 @@ body{
 	padding-bottom: 20px;
 	padding-left: 20px;
 }
-h1,h2,h3,h4
+h1,h2,h3,h4 
 {
 	color: #ffffff;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0px;
 }
-h1 span, h4 span,h2 span
+h4 span
+{
+	color:#ffffff;
+}
+h1 span, h4,h2 span
 {
 	color: #FF0004;
 }

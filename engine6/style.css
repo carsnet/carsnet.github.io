@@ -439,10 +439,10 @@ _:-ms-input-placeholder, :root #wowslider-container6 a.ws_prev > span:before {li
 	display: inline-block;
 	border: 0;
 	line-height: 0;
-	margin:0.13%;
+	margin:0.12%;
 	text-indent:0;
-	padding: 0.09%;
-	width: 5.11555555555556%;
+	padding: 0.08%;
+	width: 4.86315789473684%;
 	max-width: 119px;
 }
 #wowslider-container6 .ws_thumbs a:hover{
@@ -467,7 +467,7 @@ _:-ms-input-placeholder, :root #wowslider-container6 a.ws_prev > span:before {li
 #wowslider-container6  .ws_thumbs div{
 	position:relative;
 	letter-spacing:-4px;
-	width:259.2em;
+	width:273.6em;
 	height: 100%;
 }#wowslider-container6 .ws_thumbs  a{
 	background-color: #fff;

@@ -5,5 +5,10 @@
 4 is vulcan small
 5 is r8old small
 6 is agerar small
-7 is aventador
-8 is huracan
+7 is aventador small
+8 is huracan small
+9 is fastest
+10 is ftyper small
+11 is amggts small
+12 650s small
+13 p1 small
