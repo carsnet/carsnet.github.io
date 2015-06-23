@@ -8,12 +8,7 @@
  * Copyright 2012, Codrops
  * http://www.codrops.com
  */
- $(function() {
-			
-			$( '#ri-grid1' ).gridrotator();
-			$( '#ri-grid2' ).gridrotator();
-			});
-			
+
 ;( function( $, window, undefined ) {
 	
 	'use strict';

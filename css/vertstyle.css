@@ -1,0 +1,123 @@
+/* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l                  (normal)
+            .jssora05r                  (normal)
+            .jssora05l:hover            (normal mouseover)
+            .jssora05r:hover            (normal mouseover)
+            .jssora05l.jssora05ldn      (mousedown)
+            .jssora05r.jssora05rdn      (mousedown)
+            */
+            .jssora05l, .jssora05r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+				-webkit-transform: translate(0px, 270px);
+				-moz-transform: translate(0px, 270px);
+				-ms-transform: translate(0px, 270px);
+				-o-transform: translate(0px, 270px);
+				transform: translate(0px, 270px);
+                background: url(../images/vert/a16.png) no-repeat;
+                overflow: hidden;
+            }
+			#wide{
+				-webkit-transform: translate(0px, 202px);
+				-moz-transform: translate(0px, 202px);
+				-ms-transform: translate(0px, 202px);
+				-o-transform: translate(0px, 202px);
+				transform: translate(0px, 202px);
+			}
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05l.jssora05ldn { background-position: -250px -40px; }
+            .jssora05r.jssora05rdn { background-position: -310px -40px; }
+/* jssor slider thumbnail navigator skin 02 css */
+            /*
+            .jssort02 .p            (normal)
+            .jssort02 .p:hover      (normal mouseover)
+            .jssort02 .p.pav        (active)
+            .jssort02 .p.pdn        (mousedown)
+            */
+
+            .jssort02 {
+                position: absolute;
+                /* size of thumbnail navigator container */
+                width: 240px;
+                height: 480px;
+            }
+
+                .jssort02 .p {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 99px;
+                    height: 66px;
+                }
+
+                .jssort02 .t {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+
+                .jssort02 .w {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .jssort02 .c {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 95px;
+                    height: 62px;
+                   /* border: rgba(0,0,0,0.00) 2px solid; border color when normal */
+				   cursor:pointer;
+                    box-sizing: content-box;
+                    background: url(../images/vert/t01.png) -800px -800px no-repeat;
+                    _background: none;
+                }
+
+                .jssort02 .pav .c {
+                    top: 2px;
+                    _top: 0px;
+                    left: 2px;
+                    _left: 0px;
+                    width: 95px;
+                    height: 62px;
+                    border: #000 0px solid;
+                    _border: #fff 2px solid;
+                    background-position: 50% 50%;
+                }
+
+                .jssort02 .p:hover .c {
+                    top: 0px;
+                    left: 0px;
+                    width: 97px;
+                    height: 64px;
+                    border: #e00 1px solid;  /*border color when hovering*/
+                    background-position: 50% 50%;
+                }
+
+                .jssort02 .p.pdn .c {
+                    background-position: 50% 50%;
+                    width: 95px;
+                    height: 62px; 
+                    border: #E00 2px solid; /*border color when clicking */
+                }
+
+                * html .jssort02 .c, * html .jssort02 .pdn .c, * html .jssort02 .pav .c {
+                    /* ie quirks mode adjust */
+                    width /**/: 99px;
+                    height /**/: 66px;
+                }

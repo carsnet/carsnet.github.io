@@ -6,6 +6,7 @@ a{
 a:hover
 {
 	color:#FF0000;
+	cursor:pointer;
 }
 ::selection{
 	background-color:#FF0004;
@@ -27,7 +28,7 @@ a:hover
 body{
 	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
-
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 
@@ -127,7 +128,7 @@ h1 span, h4,h2 span
 	padding-left: 20px;
 	padding-bottom: 39px;
 }
-p, ol, ul
+p, ol, ul, .kthumb
 {
 	color: #EFEFEF;
 }
@@ -146,10 +147,6 @@ p b
 	margin-bottom: 31px;
 	margin-left: 18px;
 	position:relative;
-}
-.manu a:hover
-{
-	cursor:pointer;
 }
 .manu a:hover img{
 	background-color:rgba(255,0,4,0.7);
@@ -177,20 +174,29 @@ p b
 	padding-bottom: 15px;
 	margin-bottom: 100px;
 }
-.pop>a
+.pop>a, a.close
 {
 	float: right;
 	font-weight: bold;
 	color: #000000;
 	margin-top: 3px;
 	margin-right: 10px;
-	margin-left: 0px;
 	border: 1px  solid rgba(0,0,0,1.00);
 	border-radius: 30px;
 	padding-right: 7px;
 	padding-left: 7px;
 }
-.pop>a:hover{
+a.close{
+	color: #ffffff;
+	border: 1px  solid rgba(255,255,255,1.00);
+	margin-right: 0px;
+	margin-bottom: 7px;
+}
+.kslide h2{
+	display:inline-block;
+}
+	
+.pop>a:hover, a.close:hover{
 	color:#E90003;
 	border: 1px  solid #E90003;
 }
@@ -208,13 +214,17 @@ p b
 {
 	color:rgba(158,0,2,1.00);
 }
-.pop a img
+/*.pop a img
 {
 	border:1px solid rgba(250,250,250,0);
-}
+}*/
 .pop a:hover img
 {
-	border: 1px solid #FF0004;
+	-webkit-box-shadow: 0px 0px 20px #dd0000;
+	-moz-box-shadow: 0px 0px 20px #dd0000;
+	-o-box-shadow: 0px 0px 40px #dd0000;
+	box-shadow: 0px 0px 20px #dd0000;
+	/* border: 1px solid #FF0004; */
 }
 .pop>a+div
 {
@@ -253,7 +263,7 @@ p b
      make sure you have an empty gif */
   background-image: url('empty.gif');
 }   
-.list
+.list /*top 10*/
 {
 	float: left;
 	position: relative;
@@ -270,4 +280,47 @@ p b
 {
 	float:left;
 	margin:30px 0px 30px 30px;
+}
+.kslide{
+	clear: both;
+	display: none;
+	width:1024px;	
+	position: relative;
+	left: -20px;
+	
+	background-color: rgba(19,19,19,0.78);
+	width: 960px;	
+	padding-top: 3px;
+	padding-right: 32px;
+	padding-bottom: 11px;
+	padding-left: 32px;
+	} 
+.klside h2, .klside a{
+	margin-left: 14px;
+}
+.arr{
+	display:none;
+	margin-right: auto;
+	margin-left: auto;
+	height: 27px;
+	width: 77px;
+	opacity:0.78;
+	background: url(../images/vert/arr.png);
+}
+.kthumb
+{
+	float: left;
+	width: 210px;
+	height: auto;
+	text-align: center;
+	margin-top: 18px;
+	margin-right: 18px;
+	margin-left: 18px;
+}
+.kthumb a{
+	margin-bottom:1px;
+	opacity:0.8;
+}
+.kthumb a:hover{
+	opacity:1;
 }
