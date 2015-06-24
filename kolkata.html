@@ -10,6 +10,20 @@
 <script type="text/javascript" src="js/vert.js"></script>
 <script>
 $(document).ready(function(){
+	for (var i=3; i<=11;i+=4)		//only works with multiples of 4 grid
+	{var x=$(".kthumb").eq(i+1);
+		for(var j=i-3;j<=i;j++)
+		{
+			x.before($(".kslide").eq(j));
+		};};
+		
+	$(".kthumb>a").hover(function(m){
+		$(this).siblings(".back").css("background-color", "#FF0004");
+		}, function(){
+		$(this).siblings(".back").css("background-color", "");
+		});
+			
+			
 	$(".kthumb>a").click(function(){
 		var ind= $(".kthumb").index($(this).parent());
 		var disp=$(".kslide").eq(ind).css("display");
@@ -25,7 +39,7 @@ $(document).ready(function(){
 		
 		$('html, body').animate({scrollTop: $(".kslide").eq(ind).offset().top}, 2000);
 		
-		$(".kslide>a").click(function(event){
+		$("a.close").click(function(event){
 		event.stopPropagation();
 		$(this).parent().slideUp();
 		$(".arr").slideUp();
@@ -51,14 +65,30 @@ $(document).ready(function(){
   </div>
   <div class="bod">
   <h1>Supercars In <span>Kolkata</span></h1>
-   <div class="kthumb">Lamborghini Aventador<a><img src="images/kolkata/thumb/aventador.jpg"  alt=""/></a><div class="arr"></div></div>
-   <div class="kthumb">Lamborghini Murcielago<a><img src="images/kolkata/thumb/murcielago.jpg"  alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">Lamborghini Gallardo<a><img src="images/kolkata/thumb/gallardo.jpg"  alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">Ferrari 458 Italia<a><img src="images/kolkata/thumb/458.jpg"  alt=""/></a><div class="arr"></div></div>
+   <div class="kthumb"><div class="back">Lamborghini Aventador</div><a><img src="images/kolkata/thumb/aventador.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+   <div class="kthumb"><div class="back">Lamborghini Murcielago</div><a><img src="images/kolkata/thumb/murcielago.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">Lamborghini Gallardo</div><a><img src="images/kolkata/thumb/gallardo.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">Ferrari 458 Italia</div><a><img src="images/kolkata/thumb/458.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   
   
 
-    <!--aventador-->
+    
+    
+    
+  <div class="kthumb"><div class="back">Ferrari 355 F1</div><a><img src="images/kolkata/thumb/355f1.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">Audi R8 V10</div><a><img src="images/kolkata/thumb/r8.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>    
+  <div class="kthumb"><div class="back">Porsche Boxter S</div><a><img src="images/kolkata/thumb/boxters.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">Porsche Carrera</div><a><img src="images/kolkata/thumb/carrera.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  
+ 
+    
+   <div class="kthumb"><div class="back">Mercedes SL63 AMG</div><a><img src="images/kolkata/thumb/sl63.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">Mercedes SLK200</div><a><img src="images/kolkata/thumb/slk200.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>    
+  <div class="kthumb"><div class="back">Jaquar XKR</div><a><img src="images/kolkata/thumb/xkr.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+  <div class="kthumb"><div class="back">BMW Z4</div><a><img src="images/kolkata/thumb/z4.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
+
+
+<!--aventador-->
   <div class="kslide">
        <h2>Lamborghini <span>Aventador</span></h2><a class="close">X</a><!-- Jssor Slider Begin -->
         <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
@@ -104,7 +134,8 @@ $(document).ready(function(){
             <!--#endregion Thumbnail Navigator Skin End -->
             <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
         </div>
-        <!-- Jssor Slider End -->
+        <!-- Jssor Slider End -->        
+        <a href="aventador.html">View specs and gallery >></a>
     </div>
   <!--murcilago-->
   <div class="kslide">
@@ -267,12 +298,8 @@ $(document).ready(function(){
     </div>
     
     
-  <div class="kthumb">Ferrari 355 F1<a><img src="images/kolkata/thumb/355f1.jpg" alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">Audi R8 V10<a><img src="images/kolkata/thumb/r8.jpg" alt=""/></a><div class="arr"></div></div>    
-  <div class="kthumb">Porsche Boxter S<a><img src="images/kolkata/thumb/boxters.jpg" alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">Porsche Carrera<a><img src="images/kolkata/thumb/carrera.jpg" alt=""/></a><div class="arr"></div></div>
-  
-  <!--355f1-->
+    
+ <!--355f1-->
   <div class="kslide">
        <h2>Ferari <span>355 F1</span></h2><a class="close">X</a><!-- Jssor Slider Begin -->
         <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
@@ -350,6 +377,10 @@ $(document).ready(function(){
                 <div>
                     <img u="image" src="images/kolkata/r8/3.jpg" />
                     <img u="thumb" src="images/kolkata/r8/thumbs/3.jpg" />
+                </div>
+                <div>
+                    <img u="image" src="images/kolkata/r8/4.jpg" />
+                    <img u="thumb" src="images/kolkata/r8/thumbs/4.jpg" />
                 </div>
                 
                 
@@ -520,11 +551,8 @@ $(document).ready(function(){
         <!-- Jssor Slider End -->
     </div>
     
-   <div class="kthumb">Mercedes SL63 AMG<a><img src="images/kolkata/thumb/sl63.jpg" alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">Mercedes SLK200<a><img src="images/kolkata/thumb/slk200.jpg" alt=""/></a><div class="arr"></div></div>    
-  <div class="kthumb">Jaquar XKR<a><img src="images/kolkata/thumb/xkr.jpg" alt=""/></a><div class="arr"></div></div>
-  <div class="kthumb">BMW Z4<a><img src="images/kolkata/thumb/z4.jpg" alt=""/></a><div class="arr"></div></div>
-
+    
+    
    <!--sl63-->
   <div class="kslide">
        <h2>Mercedes <span>SL63 AMG</span></h2><a class="close">X</a><!-- Jssor Slider Begin -->

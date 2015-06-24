@@ -298,6 +298,9 @@ a.close{
 .klside h2, .klside a{
 	margin-left: 14px;
 }
+.close~a:hover{   /*view specs link */
+	text-decoration:underline;
+}
 .arr{
 	display:none;
 	margin-right: auto;
@@ -323,4 +326,8 @@ a.close{
 }
 .kthumb a:hover{
 	opacity:1;
+}
+.kthumb .back{
+	width:210px;
+	background-color:rgba(0,0,0,0.5);
 }
