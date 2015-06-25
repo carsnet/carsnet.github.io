@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	for (var i=0; i<=8;i++)
+		$(".manu").eq(i).append($(".pop").eq(i));
+		
 	$(".manu>a").click(function(){
 		$(".pop").hide().css("width","10px").find("*").css("opacity","0");
 		$(this).next().animate({height:"show"},"fast");

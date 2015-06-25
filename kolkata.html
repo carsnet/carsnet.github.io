@@ -10,12 +10,7 @@
 <script type="text/javascript" src="js/vert.js"></script>
 <script>
 $(document).ready(function(){
-	for (var i=3; i<=11;i+=4)		//only works with multiples of 4 grid
-	{var x=$(".kthumb").eq(i+1);
-		for(var j=i-3;j<=i;j++)
-		{
-			x.before($(".kslide").eq(j));
-		};};
+	var hold;
 		
 	$(".kthumb>a").hover(function(m){
 		$(this).siblings(".back").css("background-color", "#FF0004");
@@ -24,28 +19,34 @@ $(document).ready(function(){
 		});
 			
 			
-	$(".kthumb>a").click(function(){
-		var ind= $(".kthumb").index($(this).parent());
-		var disp=$(".kslide").eq(ind).css("display");
-		if (disp== "none"){
+	$(".kthumb").click(function(){
+		
+		var ind= $(".kthumb").index(this);
+		var i=0;
+		for(var j=3; j<ind; j+=4) i++;
+
 		$(".arr").hide();
 		$(".kslide").hide();
-		$(this).next(".arr").slideDown();
-		$(".kslide").eq(ind).slideDown();
-		}
-		else{
-			$(".kslide").slideUp(function(){$(".arr").slideUp();});
-		}
+		if(hold==0)
+		$(".line").children(".kslide").insertBefore($(".kslide").eq(hold+1));
+		else
+		$(".line").children(".kslide").insertAfter($(".kslide").eq(hold));
+		$(".kslide").eq(ind).appendTo($(".line").eq(i));
 		
-		$('html, body').animate({scrollTop: $(".kslide").eq(ind).offset().top}, 2000);
+		$(this).children(".arr").slideDown();
+		$(".kslide").eq(0).slideDown();
+
 		
-		$("a.close").click(function(event){
+		$('html, body').animate({scrollTop: $(".kslide").eq(0).offset().top}, 2000);
+		hold=ind;
+		});
+		
+	$("a.close").click(function(event){
 		event.stopPropagation();
 		$(this).parent().slideUp();
 		$(".arr").slideUp();
 	});
 		
-	});
 });
 </script>
  <link rel="shortcut icon" href="images/slogo.png" type="image/png"/>
@@ -71,7 +72,7 @@ $(document).ready(function(){
   <div class="kthumb"><div class="back">Ferrari 458 Italia</div><a><img src="images/kolkata/thumb/458.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   
   
-
+<div class="line"></div>
     
     
     
@@ -80,13 +81,14 @@ $(document).ready(function(){
   <div class="kthumb"><div class="back">Porsche Boxter S</div><a><img src="images/kolkata/thumb/boxters.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   <div class="kthumb"><div class="back">Porsche Carrera</div><a><img src="images/kolkata/thumb/carrera.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   
- 
+ <div class="line"></div>
     
    <div class="kthumb"><div class="back">Mercedes SL63 AMG</div><a><img src="images/kolkata/thumb/sl63.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   <div class="kthumb"><div class="back">Mercedes SLK200</div><a><img src="images/kolkata/thumb/slk200.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>    
   <div class="kthumb"><div class="back">Jaquar XKR</div><a><img src="images/kolkata/thumb/xkr.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
   <div class="kthumb"><div class="back">BMW Z4</div><a><img src="images/kolkata/thumb/z4.jpg" height="158" width="210" alt=""/></a><div class="arr"></div></div>
 
+<div class="line"></div>
 
 <!--aventador-->
   <div class="kslide">

@@ -28,12 +28,8 @@ a:hover
 body{
 	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
-font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
-
-
-	background position:center;
+	background-color:#000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-width: 1280px;
 }
 
@@ -50,7 +46,7 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 #heading {
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(../images/heading.png);
+	background-image: url(../images/heading.gif);
 	height:200px;	
 	width:520px;
 }
