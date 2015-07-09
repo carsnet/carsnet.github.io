@@ -1,5 +1,5 @@
 0 is 458 small
-1 is 8 small
+1 is i8 small
 2  is vanuish small
 3 is one 77 small
 4 is vulcan small
@@ -7,9 +7,18 @@
 6 is agerar small
 7 is aventador small
 8 is huracan small
-9 is fastest
 10 is ftyper small
 11 is amggts small
 12 650s small
 13 p1 small
-
+14 f12 small
+15 laferrari small
+16 slr small
+17 xkr small
+18 r8 new small
+19 tts small
+20 reventon small
+21 veneno small
+22 458 large
+23 i8 large
+24 650s large
