@@ -22,3 +22,21 @@
 22 458 large
 23 i8 large
 24 650s large
+25 agerar large
+26 amggts large
+27 aventador large
+28 f12 large
+29 ftyper large
+30 huracan large
+31 laferrari large
+32 one77 large
+33 p1 large
+34 r8 large [new]
+35 r8old  large
+36 reventon large 
+37 slr large
+38 tts large
+39 vanquish large
+40 veneno large
+41 vulcan large
+42 xkr large

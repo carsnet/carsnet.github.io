@@ -98,7 +98,7 @@ h4 span
 {
 	color:#ffffff;
 }
-h1 span, h4,h2 span
+h1 span,h2 span,h3 span, h4
 {
 	color: #FF0004;
 }
@@ -122,6 +122,12 @@ h1 span, h4,h2 span
 	margin-right: 5px;
 	padding-left: 20px;
 	padding-bottom: 39px;
+}
+ul.index {
+	list-style-image: url(../images/bullet.png);
+}
+ul.index li{
+	margin-bottom:10px;
 }
 p, ol, ul, .kthumb
 {
@@ -264,6 +270,9 @@ p b, .scrollerota b
 	left:0;
 	bottom:0;
 }
+.hold{
+	margin-bottom:30px;
+}
 .grdcnt /*grid container*/
 {
 	float:left;
@@ -336,4 +345,32 @@ a.close{
 }
 .kslide h2{
 	display:inline-block;
+}
+#dp{
+	height:195px;
+	width:195px;
+	float: left;
+	margin-top: 19px;
+	margin-right:10px;
+	border:solid 1px #5D5D5D;
+	position:relative;
+}
+#dp a{
+	display:block;
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+#dp span{
+	position: absolute;
+	top: 50%;
+	left: 17%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+#dp img{
+	display:none;
 }
