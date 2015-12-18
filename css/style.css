@@ -1,4 +1,15 @@
 @charset "utf-8";
+
+
+@font-face{
+    font-family: 'ethno';
+    src: url('font/EthnocentricRg-Regular.woff') format('woff'),
+        url('font/EthnocentricRg-Regular.svg#EthnocentricRg-Regular') format('svg'),
+        url('font/EthnocentricRg-Regular.eot'),
+        url('font/EthnocentricRg-Regular.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 a{
 	text-decoration:none;
 	color:#DB0003;
@@ -29,7 +40,7 @@ body{
 	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
 	background-color:#000000;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-width: 1280px;
 }
 
@@ -51,6 +62,8 @@ body{
 	width:520px;
 }
 .nav{
+	font-family: 'ethno';
+	font-size: 16px;
 	width: 1024px;
 	height: 40px;
 	background: -webkit-linear-gradient(top,  #FF3C3C 0%,#ff0000 50%,#CC0000 51%,#aa0000 100%);
@@ -66,7 +79,7 @@ body{
     }
 .nav a{
 	height:40px;
-	padding:0px 30px;
+	padding:0px 17px;
 	line-height:40px;
 	text-align:center;
 	margin-left:0px;
@@ -91,7 +104,7 @@ body{
 h1,h2,h3,h4 
 {
 	color: #ffffff;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'ethno', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0px;
 }
 h4 span
@@ -118,10 +131,9 @@ h1 span,h2 span,h3 span, h4
 {
 	display: block;
 	float: right;
-	margin-top: 60px;
 	margin-right: 5px;
-	padding-left: 20px;
-	padding-bottom: 39px;
+	margin-top: 39px;
+	margin-left: 20px;
 }
 ul.index {
 	list-style-image: url(../images/bullet.png);
@@ -183,9 +195,10 @@ p b, .scrollerota b
 	margin-top: 3px;
 	margin-right: 10px;
 	border: 1px  solid rgba(0,0,0,1.00);
-	border-radius: 30px;
-	padding-right: 7px;
-	padding-left: 7px;
+	border-radius: 50%;
+	height:24px;
+	width:24px;
+	text-align:center;
 }	
 .pop>a:hover, a.close:hover{
 	color:#E90003;
