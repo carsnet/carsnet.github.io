@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	for (var i=0; i<=8;i++)
+	for (var i=0; i<=11;i++)
 		$(".manu").eq(i).append($(".pop").eq(i));
 		
 	$(".manu>a").click(function(){

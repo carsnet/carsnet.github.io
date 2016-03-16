@@ -40,3 +40,11 @@
 40 veneno large
 41 vulcan large
 42 xkr large
+43 z4 small
+44 z4 large
+45 nsx small
+46 nsx large
+47 918 small
+48 exige small
+49 exige large
+50 918 large

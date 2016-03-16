@@ -20,4 +20,7 @@ Disallow: /venenofull.html
 Disallow: /vulcanfull.html
 Disallow: /xkrfull.html
 Disallow: /z4full.html
+Disallow: /nsxfull.html
+Disallow: /918full.html
+Disallow: /exigefull.html
 

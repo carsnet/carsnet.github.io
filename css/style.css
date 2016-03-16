@@ -24,15 +24,8 @@ a:hover
 }
 .wrapper {
 	height: auto;
-	width: 1024px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
-	-webkit-box-shadow: 0px 0px 40px #ff0000;
-	-moz-box-shadow: 0px 0px 40px #ff0000;
-	-o-box-shadow: 0px 0px 40px #ff0000;
-	box-shadow: 0px 0px 40px #ff0000;
+	width: 100%;
+	margin-top: -8px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 
@@ -44,32 +37,15 @@ body{
 	min-width: 1280px;
 }
 
-.header {
-    background:linear-gradient(to top,rgba(200,200,200,0.5),rgba(100,100,100,0.5));
-    background:-webkit-linear-gradient(bottom,rgba(200,200,200,0.5),rgba(100,100,100,0.5));
-    background:-o-linear-gradient(bottom top,rgba(200,200,200,0.5),rgba(100,100,100,0.5));
-    background:-moz-linear-gradient(bottom,rgba(200,200,200,0.5),rgba(100,100,100,0.5));
-	padding:7px 0px;
-	height: 200px;
-	width: 1024px;
-	}
-	
-#heading {
-	margin-right: auto;
-	margin-left: auto;
-	background-image: url(../images/heading.gif);
-	height:200px;	
-	width:520px;
-}
 .nav{
+	position:fixed;
 	font-family: 'ethno';
 	font-size: 16px;
-	width: 1024px;
-	height: 40px;
-	background: -webkit-linear-gradient(top,  #FF3C3C 0%,#ff0000 50%,#CC0000 51%,#aa0000 100%);
-	background: -o-linear-gradient(top, #FF3C3C 0%,#ff0000 50%,#CC0000 51%,#aa0000 100%);
-	background: -ms-linear-gradient(top,  #FF3C3C 0%,#ff0000 50%,#CC0000 51%,#aa0000 100%);
-	background: linear-gradient(to bottom, #FF3C3C 0%,#ff0000 50%,#CC0000 51%,#aa0000 100%);
+	margin-left:-8px;
+	width:101.25%;
+	height: 45px;
+	background: #000;
+	z-index:100;
     }
 
 .nav ul {
@@ -78,9 +54,9 @@ body{
     padding: 0px;
     }
 .nav a{
-	height:40px;
+	height:45px;
 	padding:0px 17px;
-	line-height:40px;
+	line-height:45px;
 	text-align:center;
 	margin-left:0px;
 	display: block;
@@ -93,13 +69,26 @@ body{
      float:left;
      color:#FFFFFF;
      }
+
+#newlogo{
+	position:relative; 
+	top: 50%;
+	-webkit-transform: translate(-0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
 .bod {
+	width:984px;
 	min-height: 400px;
-	background-color: rgba(0,0,0,0.56);
-	padding-top: 20px;
+	background-color: rgba(0,0,0,0.76);
+	padding-top:45px;
 	padding-right: 20px;
 	padding-bottom: 20px;
 	padding-left: 20px;
+	margin-left:auto;
+	margin-right:auto;
 }
 h1,h2,h3,h4 
 {
@@ -349,9 +338,6 @@ a.close{
 .kthumb .back{
 	width:210px;
 	background-color:rgba(0,0,0,0.5);
-}
-.kthumb .back span{
-	color:#008CFF;
 }
 a.close{
 	color: #ffffff;
