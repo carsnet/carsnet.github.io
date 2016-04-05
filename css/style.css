@@ -10,6 +10,39 @@
     font-weight: normal;
     font-style: normal;
 }
+.top-search{
+	position:absolute;
+	right:30px;
+	top:8px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+#searchform #s{
+position:relative;
+right:-5px;
+font-size: 14px;
+width: 160px;
+height: 30px;
+border:0px;
+background: rgba(255,255,255,1.00);
+margin:0px;
+padding:0px 0px 0px 5px;
+vertical-align:bottom;
+}
+#searchform #searchsubmit{
+margin:0px;
+padding:0px;
+border:0px;
+width: 30px;
+height: 30px;
+background: url(../images/search.png) no-repeat;
+background-color:rgba(216,0,3,1.00);
+vertical-align:bottom;
+}
+#searchform #searchsubmit:hover{
+	background-color:#FF0003;
+	cursor:pointer;
+}
+
 a{
 	text-decoration:none;
 	color:#DB0003;
@@ -32,7 +65,8 @@ a:hover
 body{
 	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
-	background-color:#000000;
+	background-repeat:no-repeat;
+	background-color:#161616;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-width: 1280px;
 }
@@ -81,7 +115,7 @@ body{
 }
 .bod {
 	width:984px;
-	min-height: 400px;
+	min-height: 580px;
 	background-color: rgba(0,0,0,0.76);
 	padding-top:45px;
 	padding-right: 20px;
@@ -144,10 +178,7 @@ p b, .scrollerota b
 	width: 300px;
 	display: inline-block;
 	text-align: center;
-	margin-top: 31px;
-	margin-right: 18px;
-	margin-bottom: 31px;
-	margin-left: 18px;
+	margin:31px 18px;
 	position:relative;
 }
 .manu a:hover img{

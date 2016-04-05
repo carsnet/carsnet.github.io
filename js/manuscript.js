@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var index= $(".manu").index($(this).parent());
 		//var litem= $(this).parent();
 		//var ind= $(".manu").index(litem);
-		if (index>=3)
+		if (index>=9)
 		{
 			$('html, body').animate({scrollTop: $(this).next().offset().top}, 2000);
 		}

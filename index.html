@@ -5,6 +5,58 @@
 <title>Carsnet | Find, Discover cars, View galleries, specs</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
  <link rel="shortcut icon" href="images/slogo.png" type="image/png"/>
+ <style>
+ .container {
+  width: 1000px;
+  line-height: 1.3;
+}
+
+ol.even {
+  position: relative;
+  left: 5.45455em;
+}
+
+ol.odd {
+  position: relative;
+  margin-top: -6.5%;
+  margin-bottom: -6.5%;
+}
+
+.hex {
+  position: relative;
+  margin: 1em auto;
+  width: 6em;
+  height: 10.2em;
+  border-radius: 1em/.5em;
+  background: #ccc;
+  transform: rotate(-90deg);
+  display: inline-block;
+  margin-right: 4.61538em;
+  transition: all 150ms ease-in-out;
+}
+
+.hex:before, .hex:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+
+.hex:before {
+  transform: rotate(60deg);
+}
+
+.hex:after {
+  transform: rotate(-60deg);
+}
+
+.hex:hover {
+  background: #F58787;
+  cursor: pointer;
+}
+ </style>
 </head>
 
 <body><!-- Google Tag Manager -->
@@ -24,7 +76,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li><a href="manufacturer.html">Gallery &amp; Enclopedia</a></li>
   <li><a href="kolkata.html">Supercars In Kolkata</a></li>
   <li><a href="lists.html">Top 10 Lists</a></li>
-  <li><a href="about.html">About</a></li></ul>
+  <li><a href="about.html">About</a></li></ul> 
+   <div class="top-search">
+<form method="get" id="searchform" id="searchbox_016383217917283792091:cucxu4r-hsk" action="search-result.html">
+<input value="016383217917283792091:cucxu4r-hsk" name="cx" type="hidden"/>
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="text" value="" placeholder="Search..." name="s" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" />
+<input type="submit" id="searchsubmit" value="" />
+</form>
+</div>
+  
   </div>
   <div class="bod">
   <h1 style="">Welcome to <span>Carsnet</span></h1>
@@ -33,8 +94,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <h2 id="index">Your no.1 source of everything car</h2>
  
   <p>Here in carsnet you'll find your favorite cars with their photos, related information and quoted specs. You'll also find photos of ferraris, lamborghinis, porsches, jaguars, audis, mercedes, etc. <a href="kolkata.html">in Kolkata.</a> The site features lists of ten cars arranged according to the fastest, lightest, etc in <a href="lists.html"> Top 10 lists.</a> More coming soon!</p>
-  
+
   <div style="height:1px;width:480px;background-color:#606060;margin-bottom:15px;"></div>
+  
+ 
   
   <h2><span>What</span> can I use this site for?</h2>
   <ul class="index">

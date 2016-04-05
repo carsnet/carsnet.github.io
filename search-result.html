@@ -4,8 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Carsnet | Find, Discover cars, View galleries, specs</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/cse.css" rel="stylesheet" type="text/css" />
  <link rel="shortcut icon" href="images/slogo.png" type="image/png"/>
  <style>
+  
  ul#loadbar {
 list-style: none;
 width: 140px;
@@ -28,11 +30,11 @@ background: #000;
 ul#loadbar li:first-child { margin-left: 0 }
 .bar {
 background-color: #2187e7;
-background-image: -moz-linear-gradient(45deg, #2187e7 25%, #a0eaff);
-background-image: -webkit-linear-gradient(45deg, #2187e7 25%, #a0eaff);
-background-image: -ms-linear-gradient(45deg, #2187e7 25%, #a0eaff);
-background-image: -o-linear-gradient(45deg, #2187e7 25%, #a0eaff);
-background-image: linear-gradient(45deg, #2187e7 25%, #a0eaff);
+background-image: -moz-linear-gradient(45deg, #B40003 25%, #FF4F51);
+background-image: -webkit-linear-gradient(45deg, #B40003 25%, #FF4F51);
+background-image: -ms-linear-gradient(45deg, #B40003 25%, #FF4F51);
+background-image: -o-linear-gradient(45deg, #B40003 25%, #FF4F51);
+background-image: linear-gradient(45deg, #B40003 25%, #FF4F51);
 width: 11px;
 height: 26px;
 opacity: 0;
@@ -117,9 +119,9 @@ animation-delay: 5s;
 0% { opacity: 0 }
 100% { opacity: 1 }
 }
-.vcard, #HTML2, #AdSense1, #BlogArchive1, #Label1, #AdSense2 {display:none;}.post {font-size:14px;}
+/*.vcard, #HTML2, #AdSense1, #BlogArchive1, #Label1, #AdSense2 {display:none;}.post {font-size:14px;}
 .footer, .post-footer, .feed-links, .sidebar,.fauxcolumn-right-outer,.column-right-outer, #HTML6 , .home-link, .banners {display:none !important;}
-.main-inner .columns{padding-right:0 !important;}.column-center-outer{width:95% !important;}
+.main-inner .columns{padding-right:0 !important;}.column-center-outer{width:95% !important;}*/
 </style>
 </head>
 
@@ -140,10 +142,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li><a href="manufacturer.html">Gallery &amp; Enclopedia</a></li>
   <li><a href="kolkata.html">Supercars In Kolkata</a></li>
   <li><a href="lists.html">Top 10 Lists</a></li>
-  <li><a href="about.html">About</a></li></ul>
+  <li><a href="about.html">About</a></li></ul> 
+   <div class="top-search">
+<form method="get" id="searchform" id="searchbox_016383217917283792091:cucxu4r-hsk" action="search-result.html">
+<input value="016383217917283792091:cucxu4r-hsk" name="cx" type="hidden"/>
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="text" value="" placeholder="Search..." name="s" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" />
+<input type="submit" id="searchsubmit" value="" />
+</form>
+</div>
+  
   </div>
   <div class="bod">
-  <h1 style="">Welcome to <span>Carsnet</span></h1>
 
  <div id="page-content">
 <div class='post-body entry-content'>
@@ -163,16 +173,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
-google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+google.load('search', '1', {language : 'en', style : src="css/cse.css", nocss: true });
 google.setOnLoadCallback(function() {
 var customSearchOptions = {};
 var orderByOptions = {};
 orderByOptions['keys'] = [{label: 'Relevance', key: ''},{label: 'Date', key: 'date'}];
-customSearchOptions['enableOrderBy'] = true;
+customSearchOptions['enableOrderBy'] = false;
 customSearchOptions['orderByOptions'] = orderByOptions;
 var imageSearchOptions = {};
 imageSearchOptions['layout'] = google.search.ImageSearch.LAYOUT_COLUMN;
-customSearchOptions['enableImageSearch'] = true;
+customSearchOptions['enableImageSearch'] = false;
 customSearchOptions['imageSearchOptions'] = imageSearchOptions;
 var googleAnalyticsOptions = {};
 googleAnalyticsOptions['queryParameter'] = 's';
@@ -207,6 +217,7 @@ customSearchControl.execute(urlParams[queryParamName]);
 </div>
 
   </div>
+</div>
 </div>
   </body>
   </html>
