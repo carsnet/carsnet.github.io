@@ -5,9 +5,14 @@
 .gsc-url-top,
 .gs-watermark,
 .gsc-thumbnail-inside,
-.gsc-url-bottom { display:none;
+.gsc-url-bottom,
+ .gsc-thumbnail { display:none;
 }
 
+.gsc-result-info{
+	margin:10px 0px 5px;
+	color:#D5D5D5;
+}
 .gsc-result {
     padding: 20px 0;
 	padding-left:2px;
