@@ -87,12 +87,6 @@ b {
 .gsc-cursor-page:hover {
 	color:#FF0000;
 }
-
-.cse .gsc-webResult.gsc-result.gsc-promotion,
-.gsc-webResult.gsc-result.gsc-promotion {
-  display:none;
-}
-
 /*
 form.gsc-search-box { 
     background: #d9dadd;
