@@ -82,4 +82,7 @@ jQuery(document).ready(function ($) {
 			var jssor_slider10 = new $JssorSlider$("slider10_container", options);
 			var jssor_slider11 = new $JssorSlider$("slider11_container", options);
 			var jssor_slider12 = new $JssorSlider$("slider12_container", options);
+			var jssor_slider13 = new $JssorSlider$("slider13_container", options);
+			var jssor_slider14 = new $JssorSlider$("slider14_container", options);
+			var jssor_slider15 = new $JssorSlider$("slider15_container", options);
         });
