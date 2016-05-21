@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: /458full.html
+Disallow: /650sfull.html
+Disallow: /agerarfull.html
+Disallow: /amggtsfull.html
+Disallow: /aventadorfull.html
+Disallow: /f12full.html
+Disallow: /ftyperfull.html
+Disallow: /huracanfull.html
+Disallow: /i8full.html
+Disallow: /laferrarifull.html
+Disallow: /one77full.html
+Disallow: /p1full.html
+Disallow: /r8full.html
+Disallow: /r8oldfull.html
+Disallow: /reventonfull.html
+Disallow: /ttsfull.html
+Disallow: /vanquishfull.html
+Disallow: /venenofull.html
+Disallow: /vulcanfull.html
+Disallow: /xkrfull.html
+Disallow: /z4full.html
+Disallow: /nsxfull.html
+Disallow: /918full.html
+Disallow: /exigefull.html
+
