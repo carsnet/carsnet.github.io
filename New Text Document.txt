@@ -1,0 +1,50 @@
+0 is 458 small
+1 is i8 small
+2  is vanuish small
+3 is one 77 small
+4 is vulcan small
+5 is r8old small
+6 is agerar small
+7 is aventador small
+8 is huracan small
+10 is ftyper small
+11 is amggts small
+12 650s small
+13 p1 small
+14 f12 small
+15 laferrari small
+16 slr small
+17 xkr small
+18 r8 new small
+19 tts small
+20 reventon small
+21 veneno small
+22 458 large
+23 i8 large
+24 650s large
+25 agerar large
+26 amggts large
+27 aventador large
+28 f12 large
+29 ftyper large
+30 huracan large
+31 laferrari large
+32 one77 large
+33 p1 large
+34 r8 large [new]
+35 r8old  large
+36 reventon large 
+37 slr large
+38 tts large
+39 vanquish large
+40 veneno large
+41 vulcan large
+42 xkr large
+43 z4 small
+44 z4 large
+45 nsx small
+46 nsx large
+47 918 small
+48 exige small
+49 exige large
+50 918 large
