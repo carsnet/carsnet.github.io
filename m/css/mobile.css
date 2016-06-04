@@ -20,9 +20,7 @@
 
 body{
 		margin:0;
-	background-repeat:no-repeat;
-	background-image:url(../../images/mobile_background.jpg);
-	background-color:#0b0b0b;
+	background-color:#1E1E1E;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 		color:#EFEFEF;
 
@@ -120,7 +118,7 @@ z-index:1;
 div.side{
 	position:absolute;
 	display:none;
-	background-color:#1E1E1E;
+	background-color:#2F2F2F;
 	height:100%;
 	overflow:hidden;
 	z-index:1;
