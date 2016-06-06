@@ -16,10 +16,11 @@
     font-style: normal;
 }  */
 
-
+* {
+	box-sizing:border-box;
+}
 
 body{
-	box-sizing:border-box;
 		font-size:100%;
 		margin:0;
 	background-color:#1E1E1E;
@@ -196,4 +197,11 @@ ul.index {
 }
 ul.index li{
 	margin-bottom:10px;
+}
+h1.mat{
+	width:100%;
+	 background-color:#000;
+	 margin:0;
+	 padding-left:7px;
+	 padding-bottom:5px;
 }

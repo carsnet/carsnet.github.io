@@ -22,9 +22,10 @@ $(document).ready(function(){
 	});
 		}
 		
-		var inp= $("#s").val();
-		if(!inp){
+		var inp;
 		$("form").submit(function(e){
+				inp= $("#s").val();
+				if(!inp){
                 e.preventDefault(e);
 				$("#searchsubmit").css("display","none");
 				$("#bsearchsubmit").css("display","block");
@@ -32,10 +33,10 @@ $(document).ready(function(){
 				$("#clear").fadeOut("fast");
 				if(wid<650){
 			$("#newlogo").fadeIn('fast');
-		}
+		}}
 
 		});
-		}
+		
 
 
 		
