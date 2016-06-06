@@ -2,7 +2,8 @@
 
     $.fn.honeycombs = function(options) {
 		var wid=$(window).width();
-		wid=(wid<700)?wid:394;
+		if(wid>700)
+		wid=526;
         // Establish our default settings
         var settings = $.extend({
             combWidth: wid*0.38,
