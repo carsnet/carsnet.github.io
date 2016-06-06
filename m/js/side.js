@@ -2,8 +2,11 @@ $(document).ready(function(){
 
 
 	$(".ham").click(function(){
-		$("div.side").animate({width: ['toggle', 'swing']},"fast");
+		$("div.side").animate({width: ['toggle', 'swing']},"fast");	
 	});
+	
+	
+		
 		
 		var wid=$(window).width(); 
 		
