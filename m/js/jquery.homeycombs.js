@@ -4,7 +4,7 @@
 
         // Establish our default settings
         var settings = $.extend({
-            combWidth: 200,
+            combWidth: 150,
             margin: 10
         }, options);
 
