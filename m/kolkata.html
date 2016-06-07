@@ -71,7 +71,7 @@
 <div class="comb"> <img src="../images/kolkata/thumb/z4.jpg" /> <a href="kolkata/z4.html"></a> </div>
 <div class="comb"> <img src="../images/kolkata/thumb/ftype.jpg" /> <a href="kolkata/ftype.html"></a> </div>
 <div class="comb"> <img src="../images/kolkata/thumb/xkr.jpg" /> <a href="kolkata/xkr.html"></a> </div>
-<div class="comb"> </div> <!--to make even -->
+<div class="comb" style="display:none;"> </div> <!--to make even -->
 <div class="comb"> <img src="../images/kolkata/thumb/virage.jpg" /> <a href="kolkata/virage.html"></a> </div>
 
 </div>
@@ -82,6 +82,22 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.honeycombs').honeycombs();
+		
+		
+		var i = 0;    
+		var speed=150;                 //  set your counter to 1
+function myLoop () {           //  create a loop function
+   setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+      $(".honeycombs").find(".hex_inner").eq(i).fadeIn(speed);          //  your code here
+      i++;                     //  increment the counter
+      if (i < 20) {            //  if the counter < 10, call the loop function
+         myLoop();             //  ..  again which will trigger another 
+      }                        //  ..  setTimeout()
+   }, speed)
+}
+
+myLoop();      
+		
     });
 </script>
 </body>
