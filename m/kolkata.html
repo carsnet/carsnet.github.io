@@ -84,19 +84,26 @@
         $('.honeycombs').honeycombs();
 		
 		
-		var i = 0;    
-		var speed=150;                 //  set your counter to 1
-function myLoop () {           //  create a loop function
+		   
+		var nos=20;
+		var sels=$(".honeycombs");  
+		
+		
+var i=0;
+var speed=150;
+function myLoop (sel,no) {           //  create a loop function
    setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-      $(".honeycombs").find(".hex_inner").eq(i).fadeIn(speed);          //  your code here
+      sel.find(".hex_inner").eq(i).fadeIn(speed);          //  your code here
       i++;                     //  increment the counter
-      if (i < 20) {            //  if the counter < 10, call the loop function
-         myLoop();             //  ..  again which will trigger another 
+      if (i < no) {            //  if the counter < 10, call the loop function
+         myLoop(sel,no);             //  ..  again which will trigger another 
       }                        //  ..  setTimeout()
    }, speed)
 }
+           
 
-myLoop();      
+
+myLoop(sels,nos);      
 		
     });
 </script>
