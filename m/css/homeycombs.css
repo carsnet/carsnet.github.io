@@ -94,7 +94,7 @@
 .honeycombs .hex_inner:hover, .honeycombs .hex_inner:active {
 		background-color: rgba(190,0,2,1);
 }
-.b .hex_inner{
+.b .hex_inner, .b .hex_inner:hover, .b .hex_inner:active{
 	background-color:rgba(255,255,255,0.90);
 	background-size:60%;
 }
