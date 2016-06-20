@@ -115,7 +115,7 @@
             // Pagination
             pagination: null,
             paginationElement: 'span',
-            paginationClickable: false,
+            paginationClickable: true,
             paginationHide: false,
             paginationBulletRender: null,
             paginationProgressRender: null,
