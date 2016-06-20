@@ -1,3 +1,6 @@
 h1.mat{
 	margin-bottom:20px;
 }
+.side{
+	z-index:1000;
+}

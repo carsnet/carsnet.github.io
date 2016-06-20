@@ -6,20 +6,20 @@
  <link rel="shortcut icon" href="../../images/slogo.png" type="image/png"/>
  <link href="../css/mobile.css" rel="stylesheet" type="text/css" />
  <link href="k.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="../css/swiper.css" type="text/css">
 
 
- 
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+
 
 <title>Carsnet | Find, Discover cars, View galleries, specs</title>
-<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	<script type="text/javascript" src="engine1/jquery.js"></script>
-	<!-- End WOWSlider.com HEAD section -->
-
 	</head>
 
 <body>
+<script src="../js/swiper.jquery.js"></script>
+
 <div class="bar">
 <img src="../../images/button.png" class="ham"/>
 
@@ -48,28 +48,40 @@
   <li><a href="about.html">About</a></li></ul> 
 </div>
 
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
-	</ul></div>
-	<div class="ws_thumbs">
-<div>
-		<a href="data1/images/1.jpg" title="1"><img src="data1/tooltips/1.jpg" alt="" /></a>
-		<a href="data1/images/2.jpg" title="2"><img src="data1/tooltips/2.jpg" alt="" /></a>
-		<a href="data1/images/3.jpg" title="3"><img src="data1/tooltips/3.jpg" alt="" /></a>
-		<a href="data1/images/4.jpg" title="4"><img src="data1/tooltips/4.jpg" alt="" /></a>
-		<a href="data1/images/5.jpg" title="5"><img src="data1/tooltips/5.jpg" alt="" /></a>
-		<a href="data1/images/6.jpg" title="6"><img src="data1/tooltips/6.jpg" alt="" /></a>
-		<a href="data1/images/7.jpg" title="7"><img src="data1/tooltips/7.jpg" alt="" /></a>
-	</div>
-</div>
-<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script>
-	<!-- End WOWSlider.com BODY section -->
-     <script src="js/side.js"></script>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="../../images/kolkata/458/1.jpg"/></div>
+        <div class="swiper-slide"><img src="../../images/kolkata/458/2.jpg"/></div>
+        <div class="swiper-slide"><img src="../../images/kolkata/458/3.jpg"/></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    </div>
+
+	  <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+  })        
+  </script>
+     <script src="../js/side.js"></script>
+     
 </body>
 </html>
