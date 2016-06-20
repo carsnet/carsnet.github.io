@@ -12,7 +12,9 @@
  * 
  * Released on: February 7, 2016
  */
- 
+ .swiper-container.gallery-top{ 
+ 	margin-top:20px;
+ }
     .gallery-top {
         height: 80%;
         width: 100%;

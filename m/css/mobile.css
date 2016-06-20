@@ -146,7 +146,7 @@ div.side{
 	background-color:#2F2F2F;
 	height:100%;
 	overflow:hidden;
-	z-index:1;
+	z-index:5;
 }
 div.side ul{
 	list-style-type: none;
