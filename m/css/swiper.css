@@ -12,6 +12,22 @@
  * 
  * Released on: February 7, 2016
  */
+ 
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+    }
+    .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.6;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+	
 .swiper-container {
   margin: 0 auto;
   position: relative;
