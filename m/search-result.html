@@ -5,24 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <link rel="shortcut icon" href="../images/slogo.png" type="image/png"/>
  <link href="css/mobile.css" rel="stylesheet" type="text/css" />
-  <link href="css/hex.css" rel="stylesheet" type="text/css" />
+<link href="css/cse.css" rel="stylesheet" type="text/css" />
 
 
  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <title>Carsnet | Find, Discover cars, View galleries, specs</title>
+
 </head>
 
-<body><!--facebook-->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body>
 <div class="bar">
 <img src="../images/button.png" class="ham"/>
 
@@ -45,65 +38,61 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="manufacturer.html">Gallery<span>_</span>&amp;<span>_</span>Enclopedia</a></li>
   <li><a href="kolkata.html">Supercars<span>_</span>In<span>_</span>Kolkata</a></li>
-  <li><a href="lists.html">Top<span>_</span>10<span>_</span>Lists</a></li>
-  <li><a href="about.html">About</a></li></ul> 
+  <li><a href="comingsoon.html">Top<span>_</span>10<span>_</span>Lists</a></li>
+  <li><a href="comingsoon.html">About</a></li></ul> 
 </div>
-  <h1>Welcome to <span>Carsnet</span></h1>
-  <h2>Your no.1 source of everything car</h2>
-    <img src="../images/logo.png"  id="logo"  alt=""/>
     
-     <ul id="hexGrid">
-            <li class="hex">
-                <a class="hexIn" href="kolkata.html">
-                    <h2>Supercars in Kolkata</h2>
-                </a>
-            </li> 
-            <li class="hex">
-                <a class="hexIn" href="manufacturer.html">
-                <img src="../images/logos/Ferrari.png" />
-                </a>
-            </li>
-           <li class="hex">
-                <a class="hexIn" href="manufacturer.html">
-                    <h2>Gallery</h2>
-                </a>
-            </li> 
-            <li class="hex">
-                <a class="hexIn" href="manufacturer.html">
-                <img src="../images/logos/Lamborghini.png" />
-                </a>
-            </li> 
-             <li class="hex">
-                <a class="hexIn" href="lists.html">
-                    <h2>Top 10 Lists</h2>
-                </a>
-            </li>
-            <li class="hex">
-                <a class="hexIn" style="cursor:default;">
-                <p>Like us on Facebook:</p>
-                     <div class="fb-like" data-href="https://www.facebook.com/thecarsnet" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" style="position:absolute; top:50%; left: 7%;"></div>
- 
-                </a>
-            </li>
-            
-  </ul>
-  
-  <h2><span>What</span> can I use this site for?</h2>
-  <ul class="index">
-  <li>View cars in full-screen HD galleries.</li>
-  <li>Look-up their specs such as top speed, 0-100 kph times, horsepower, etc.</li>
-  <li>Read about cars in their descriptions.</li>
-  <li>Find which supercars are hidden in Kolkata and view pics of them in kolkata.</li>
-  <li>Discover cars according to fastest, lightest and other trivia in top 10 slideshows.</li>
-  </ul>
-  <div style="height:1px;background-color:#606060;margin:auto; margin-bottom:15px; width:90%;"></div>
-  <h2><span>Coming</span> soon</h2>
-  <ul class="index">
-  <li>More cars with galleries, specs and info.</li>
-  <li>More supercars in Kolkata.</li>
-  <li>More top 10 lists.</li>
-  <li>Uploading photos you have of supercars in Kolkata to the site.</li>
-  </ul>
+  <div id="page-content">
+<div class='post-body entry-content'>
+<div id="cse" style="width: 100%;">
+</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'en', style : src="css/cse.css", nocss: true });
+google.setOnLoadCallback(function() {
+var customSearchOptions = {};
+var orderByOptions = {};
+orderByOptions['keys'] = [{label: 'Relevance', key: ''},{label: 'Date', key: 'date'}];
+customSearchOptions['enableOrderBy'] = false;
+customSearchOptions['orderByOptions'] = orderByOptions;
+var imageSearchOptions = {};
+imageSearchOptions['layout'] = google.search.ImageSearch.LAYOUT_COLUMN;
+customSearchOptions['enableImageSearch'] = false;
+customSearchOptions['imageSearchOptions'] = imageSearchOptions;
+var googleAnalyticsOptions = {};
+googleAnalyticsOptions['queryParameter'] = 's';
+googleAnalyticsOptions['categoryParameter'] = '';
+customSearchOptions['googleAnalyticsOptions'] = googleAnalyticsOptions; var customSearchControl = new google.search.CustomSearchControl(
+'016383217917283792091:qzara7n0w1e', customSearchOptions);
+customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+var options = new google.search.DrawOptions();
+options.setAutoComplete(true);
+options.enableSearchResultsOnly();
+customSearchControl.draw('cse', options);
+function parseParamsFromUrl() {
+var params = {};
+var parts = window.location.search.substr(1).split('\x26');
+for (var i = 0; i < parts.length; i++) {
+var keyValuePair = parts[i].split('=');
+var key = decodeURIComponent(keyValuePair[0]);
+params[key] = keyValuePair[1] ?
+decodeURIComponent(keyValuePair[1].replace(/\+/g, ' ')) :
+keyValuePair[1];
+}
+return params;
+}
+var urlParams = parseParamsFromUrl();
+var queryParamName = "s";
+if (urlParams[queryParamName]) {
+customSearchControl.execute(urlParams[queryParamName]);
+}
+}, true);
+</script>
+<div style='clear: both;'></div>
+</div>
+
+  </div>
+
 
 
 
