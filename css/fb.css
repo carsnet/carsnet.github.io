@@ -1,0 +1,12 @@
+/*
+Use the like box iframe embed like this. Change the embed url!
+<div class="like-button red">
+    <iframe src="{PUT_URL_HERE}" scrolling="no" frameborder="0" style="border:none; overflow:hidden; " allowTransparency="true"></iframe>
+</div>
+*/
+
+.like-button{float:left; width:15%;}
+.like-button iframe{
+  height:24px; width:50px; transform:scale(1.8);
+}
+.like-button.red{filter:hue-rotate(120deg);}
